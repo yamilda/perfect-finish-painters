@@ -47,24 +47,28 @@ const services = [
     title: "Interior Painting",
     desc: "Walls, ceilings, trim, and accent walls.",
     image: "/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp",
+    alt: "Before and after of a basement room in Egg Harbor Township: patched gray walls and a covered floor, then lilac walls and wood-look flooring under a drop ceiling",
     href: "/interior-painting",
   },
   {
     title: "Exterior Painting",
     desc: "Siding, shutters, doors, and trim.",
-    image: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
+    image: "/exterior-siding-staining-before-after-egg-harbor-township-nj.webp",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame",
     href: "/exterior-painting",
   },
   {
     title: "Drywall Repairs",
     desc: "Holes, cracks, and surface restoration.",
     image: "/drywall-ceiling-repair-before-after-mays-landing-nj.webp",
+    alt: "Before and after of a stained, patched drywall ceiling in a Mays Landing living area repaired and painted smooth white, with walls going from beige to light gray",
     href: "/drywall-repair",
   },
   {
     title: "Flooring",
     desc: "Hardwood, laminate, vinyl, and tile.",
     image: "/bedroom-flooring-installation-painting-before-after-egg-harbor-township-nj.webp",
+    alt: "Before and after of a bedroom in Egg Harbor Township: bare OSB subfloor replaced with light wood-look vinyl plank, light gray walls, and white trim",
     href: "/flooring",
   },
 ];
@@ -219,6 +223,7 @@ export default function Home() {
         <Image
           src="/projects/open-concept-living-dining.webp"
           alt=""
+          aria-hidden
           fill
           priority
           sizes="100vw"
@@ -354,7 +359,7 @@ export default function Home() {
                   <div className="relative h-40 sm:h-48 rounded-xl overflow-hidden">
                     <Image
                       src={s.image}
-                      alt={`${s.title} by Perfect Finish Painters`}
+                      alt={s.alt}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />

@@ -6,49 +6,49 @@ import Image from "next/image";
 const projects = [
   {
     src: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
-    alt: "Shed exterior transformation by Perfect Finish Painters",
+    alt: "Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim",
     category: "Exterior",
     title: "Shed Transformation",
     desc: "Complete exterior repaint with weather-resistant finish.",
   },
   {
     src: "/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp",
-    alt: "Room renovation with new flooring and paint",
+    alt: "Before and after of a basement room in Egg Harbor Township: patched gray walls and a covered floor, then lilac walls and wood-look flooring under a drop ceiling",
     category: "Interior",
     title: "Complete Room Renovation",
     desc: "Fresh interior paint paired with new flooring installation.",
   },
   {
     src: "/basement-ceiling-painting-black-before-after-hammonton-nj.webp",
-    alt: "Commercial exposed ceiling painting",
-    category: "Commercial",
-    title: "Exposed Ceiling Finish",
-    desc: "Commercial space with professional exposed ceiling treatment.",
+    alt: "Before and after of an exposed basement ceiling in Hammonton: unfinished joists, ducts, and beams painted black",
+    category: "Interior",
+    title: "Basement Ceiling Painted Black",
+    desc: "Exposed joists, ducts, and beams in a basement painted black.",
   },
   {
     src: "/radiator-painting-before-after-somers-point-nj.webp",
-    alt: "Radiator refinishing and specialty painting",
-    category: "Specialty",
-    title: "Radiator Refinishing",
-    desc: "Specialty refinishing bringing old radiators back to life.",
+    alt: "Before and after of a worn natural oak floor refinished to a dark stain, with a floor sander standing in the before photo",
+    category: "Flooring",
+    title: "Dark Hardwood Floor Refinish",
+    desc: "Worn natural oak flooring sanded and refinished to a dark stain.",
   },
   {
     src: "/basement-floor-epoxy-coating-before-after-galloway-nj.webp",
-    alt: "Basement floor coating and finishing",
+    alt: "Before and after of a Galloway basement: stained bare concrete around a furnace and workbench, then a smooth light-gray coated floor",
     category: "Flooring",
     title: "Basement Floor Coating",
     desc: "Durable epoxy-style floor coating for a clean, finished basement.",
   },
   {
     src: "/interior-ceiling-painting-living-room-kitchen-absecon-nj.webp",
-    alt: "Whole house interior painting project",
+    alt: "Collage of a whole-home ceiling repaint: living room, hallway, and kitchen ceilings going from patched and taped to a smooth white finish",
     category: "Interior",
     title: "Whole House Interior",
     desc: "Full home interior — every room painted top to bottom.",
   },
   {
     src: "/drywall-ceiling-repair-before-after-mays-landing-nj.webp",
-    alt: "Ceiling drywall repair and restoration",
+    alt: "Before and after of a stained, patched drywall ceiling in a Mays Landing living area repaired and painted smooth white, with walls going from beige to light gray",
     category: "Drywall",
     title: "Ceiling Restoration",
     desc: "Damaged ceiling repaired and restored to a smooth, clean finish.",
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     src: "/fence-gate-painting-black-northfield-nj.webp",
-    alt: "A black painted wooden fence with pointed pickets and lattice base enclosing a small outdoor area beside a house.",
+    alt: "Black pointed-picket wooden fence with a lattice skirt, painted beside a house with purple siding and a brick chimney",
     category: "Exterior",
     title: "Exterior Fence Painting",
     desc: "We refreshed this outdoor wooden fence with a durable black paint to enhance its appearance and protection against the elements.",
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     src: "/dining-room-wainscoting-painting-before-after-egg-harbor-township-nj.webp",
-    alt: "Before-and-after view of a room with paneled walls, showing unfinished beige panels on the left and freshly painted deep maroon panels on the right, with protective coverings on the floor and counter.",
+    alt: "Before and after of a dining room: an unfinished wainscoting grid under a patched red wall, then burgundy raised-panel wainscoting with the wall above painted white",
     category: "Interior",
     title: "Paneled Wall Transformation",
     desc: "We painted the vertical paneled walls and wainscoting in a deep maroon color, updating the space from raw wood to a polished, elegant finish.",
@@ -104,7 +104,7 @@ const projects = [
   },
   {
     src: "/kitchen-drywall-repair-painting-before-after-northfield-nj.webp",
-    alt: "Split image showing white painted kitchen cabinets, light gray walls, and marble-patterned countertops with electrical outlets and a built-in microwave.",
+    alt: "Before and after of a kitchen corner: open drywall cutouts along a gray wall, then a finished wall with white shaker cabinets, a built-in microwave, and a gray veined counter",
     category: "Interior",
     title: "Kitchen Cabinet Update",
     desc: "The kitchen features freshly painted white cabinets and soft gray walls, complementing the stone-like countertops and modern fixtures.",
@@ -139,7 +139,7 @@ const projects = [
   },
   {
     src: "/exterior-siding-staining-before-after-egg-harbor-township-nj.webp",
-    alt: "Before-and-after image of a house's exterior siding and sliding door, showing a transition from dull orange with dark trim to fresh orange with white door frame.",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame",
     category: "Exterior",
     title: "Exterior Siding Refresh",
     desc: "We repainted the home's exterior siding in a vibrant orange and updated the sliding door frame to crisp white for a revitalized appearance.",
@@ -153,14 +153,14 @@ const projects = [
   },
   {
     src: "/kitchen-ceiling-water-damage-drywall-repair-before-after-galloway-nj.webp",
-    alt: "Kitchen ceiling water damage drywall repair before and after in Galloway NJ",
+    alt: "Before and after of a Galloway kitchen ceiling: open holes with exposed insulation and plastic sheeting, then a smooth white ceiling with a vent",
     category: "Drywall",
     title: "Kitchen Ceiling Water Damage Repair",
     desc: "Repaired water-damaged kitchen ceiling with exposed insulation — replaced drywall, patched, and painted for a seamless finish.",
   },
   {
     src: "/bedroom-flooring-installation-painting-before-after-egg-harbor-township-nj.webp",
-    alt: "Bedroom flooring installation and painting before and after in Egg Harbor Township NJ",
+    alt: "Before and after of a bedroom in Egg Harbor Township: bare OSB subfloor replaced with light wood-look vinyl plank, light gray walls, and white trim",
     category: "Flooring",
     title: "Bedroom Flooring & Paint",
     desc: "Replaced subfloor with vinyl plank flooring and painted walls light gray with clean white trim.",
@@ -195,21 +195,21 @@ const projects = [
   },
   {
     src: "/garage-door-painting-wood-stain-before-after-brigantine-nj.webp",
-    alt: "Garage door painting with wood stain finish before and after in Brigantine NJ",
+    alt: "Before and after of a carriage-style garage door in Brigantine: white panels refinished to a brown wood-grain look, with gray shingle siding and a white frame",
     category: "Exterior",
     title: "Garage Door Wood Stain",
     desc: "Transformed a plain white garage door with a wood-grain stain finish for a premium look.",
   },
   {
     src: "/living-room-ceiling-drywall-repair-before-after-absecon-nj.webp",
-    alt: "Living room ceiling drywall repair before and after in Absecon NJ",
+    alt: "Before and after of an Absecon living room ceiling: a large peeled patch above the doorway repaired to a smooth white ceiling with crown molding",
     category: "Drywall",
     title: "Living Room Ceiling Repair",
     desc: "Patched a large water-damaged ceiling area, skim coated smooth, and painted — crown molding preserved.",
   },
   {
     src: "/bedroom-repaint-blue-to-white-before-after-pleasantville-nj.webp",
-    alt: "Bedroom repaint from blue to white before and after in Pleasantville NJ",
+    alt: "Before and after of a Pleasantville bedroom: blue walls with spackle patches and covered furniture, then white walls, a gray bed, and wood-look flooring",
     category: "Interior",
     title: "Bedroom Color Transformation",
     desc: "Full bedroom repaint from blue to warm white with new flooring — completely transformed the space.",
@@ -252,7 +252,7 @@ const projects = [
   // ── Govee permanent lighting installs (photos added 2026-09-08) ──
   {
     src: "/govee-permanent-lighting-warm-white-stone-ranch-linwood-nj.webp",
-    alt: "Warm white permanent lighting outlining the rooflines and dormers of a stone-front ranch at night",
+    alt: "Night view of a stone-front ranch in Linwood with warm white permanent lights tracing the dormers, eaves, and garage roofline",
     category: "Lighting",
     title: "Warm White Roofline",
     desc: "Permanent eave lighting in classic warm white — architectural glow, every night.",
@@ -364,7 +364,7 @@ const projects = [
   },
 ];
 
-const categories = ["All", "Interior", "Exterior", "Drywall", "Flooring", "Commercial", "Specialty", "Lighting"];
+const categories = ["All", "Interior", "Exterior", "Drywall", "Flooring", "Lighting"];
 
 export default function OurWorkGallery() {
   const [filter, setFilter] = useState("All");

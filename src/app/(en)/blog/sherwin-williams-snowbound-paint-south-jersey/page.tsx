@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/sherwin-williams-snowbound-paint-south-jersey",
-    images: [{ url: "/images/blog/sherwin-williams-snowbound-paint-south-jersey.webp", width: 1200, height: 630, alt: "Discover the Timeless Appeal of Sherwin-Williams Snowbound Paint for South Jersey Homes" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Discover the Timeless Appeal of Sherwin-Williams Snowbound Paint for South Jersey Homes",
     description: "Explore Sherwin-Williams Snowbound paint for your South Jersey home. Perfect Finish Painters in Mays Landing, NJ, shares tips on this versatile white shade.",
-    images: ["/images/blog/sherwin-williams-snowbound-paint-south-jersey.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/sherwin-williams-snowbound-paint-south-jersey" },
 };

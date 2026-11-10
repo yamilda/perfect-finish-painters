@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     url: "https://perfectfinishpainter.com/pintores-cerca-de-mi",
     images: [
       {
-        url: "/logo.webp",
-        width: 1970,
-        height: 748,
-        alt: "Perfect Finish Painters logo",
+        url: "/og-card.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ",
       },
     ],
   },
@@ -152,6 +152,7 @@ export default function EsRootLayout({
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=3251744804997418&ev=PageView&noscript=1"
             alt=""
+            aria-hidden="true"
           />
         </noscript>
         <script

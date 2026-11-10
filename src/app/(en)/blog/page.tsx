@@ -42,7 +42,7 @@ const posts = [
     excerpt: "Late August through October is the friendliest exterior painting weather of the year in South Jersey - and the last chance to seal siding, trim and decks before winter storms do real damage. What fits before the season closes.",
     date: "August 2026",
     image: "/deck-exterior-painting-before-after-south-jersey-nj.webp",
-    alt: "Deck and exterior painting before and after in South Jersey",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame",
   },
   {
     slug: "govee-permanent-lighting-painters-south-jersey",
@@ -50,7 +50,7 @@ const posts = [
     excerpt: "Govee track mounts to your fascia - the exact surface painting crews work every week. Why sound-wood checks, color-matching and clean flush fastening make a painter the right installer for permanent roofline lighting.",
     date: "August 2026",
     image: "/exterior-siding-staining-before-after-egg-harbor-township-nj.webp",
-    alt: "Exterior siding and trim work on an Egg Harbor Township NJ home",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame",
   },
   {
     slug: "wallpaper-removal-repaint-south-jersey",
@@ -66,7 +66,7 @@ const posts = [
     excerpt: "Summer is one of the best windows to repaint inside — if you account for shore humidity. Here's how coastal moisture and your AC affect paint drying, and the smart way to schedule a summer interior project in Atlantic County.",
     date: "June 2026",
     image: "/bedroom-repaint-blue-to-white-before-after-pleasantville-nj.webp",
-    alt: "Bedroom interior repaint before and after in Pleasantville, NJ",
+    alt: "Before and after of a Pleasantville bedroom: blue walls and covered furniture, then white walls, a gray bed, and wood-look flooring",
   },
   {
     slug: "garage-drywall-finishing-south-jersey",
@@ -122,7 +122,7 @@ const posts = [
     excerpt: "Cedar siding is a popular choice for homes in South Jersey due to its natural beauty and durability, but it can suffer from wear over time. At Perfect Finish Painters, we specialize in professional cedar siding repair to protect and enhance your property. Learn about common issues, repair techniques, and why our Mays Landing-based team is your go-to for South Jersey painting services.",
     date: "March 2026",
     image: "/exterior-siding-staining-before-after-egg-harbor-township-nj.webp",
-    alt: "Cedar siding staining and repair before and after in Egg Harbor Township NJ",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame",
   },
   {
     slug: "exterior-painting-south-jersey",
@@ -130,7 +130,7 @@ const posts = [
     excerpt: "Discover how professional exterior painting can transform your home's appearance and protect it from the elements. At Perfect Finish Painters in Mays Landing, NJ, we specialize in high-quality exterior painting services tailored for South Jersey homes. Learn tips, benefits, and why choosing local experts makes all the difference.",
     date: "March 2026",
     image: "/deck-exterior-painting-before-after-south-jersey-nj.webp",
-    alt: "Exterior deck painting before and after in South Jersey NJ",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame",
   },
   {
     slug: "difference-between-flat-and-satin-paint-finish",
@@ -138,7 +138,7 @@ const posts = [
     excerpt: "Choosing the right paint finish can make a big difference in your home's appearance and durability. Flat and satin finishes are popular options, each with unique characteristics suited to different rooms and needs. In this post, we'll break down the key differences to help you decide what's best for your South Jersey home.",
     date: "March 2026",
     image: "/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp",
-    alt: "Interior room painting before and after in Egg Harbor Township NJ",
+    alt: "Before and after of a basement room in Egg Harbor Township: patched gray walls and a covered floor, then lilac walls and wood-look flooring under a drop ceiling",
   },
   {
     slug: "best-exterior-paint-south-jersey",
@@ -146,7 +146,7 @@ const posts = [
     excerpt: "Coastal humidity, salt air, and seasonal temperature swings make choosing the right exterior paint critical in South Jersey. Here's what we recommend.",
     date: "February 2025",
     image: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
-    alt: "Exterior painting before and after in Mays Landing NJ",
+    alt: "Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim",
   },
 ];
 

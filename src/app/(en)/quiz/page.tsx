@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/quiz" },
+  robots: { index: false, follow: false },
 };
 
 export default async function QuizPage({

@@ -114,7 +114,7 @@ export default function ExteriorPaintingPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/exterior-siding-staining-before-after-egg-harbor-township-nj.webp" alt="Cedar siding repair and staining before and after in Egg Harbor Township NJ" width={600} height={450} className="w-full h-auto" />
+                <Image src="/exterior-siding-staining-before-after-egg-harbor-township-nj.webp" alt="Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

@@ -8,20 +8,20 @@ import FloatingCTA from "@/components/FloatingCTA";
 export const metadata: Metadata = {
   title: "Summer Interior Painting in South Jersey | Perfect Finish",
   description:
-    "Is summer a good time to repaint your South Jersey home's interior? How shore humidity and AC affect drying — plus the smart way to schedule. Call (609) 377-4226.",
+    "Is summer a good time to repaint a South Jersey interior? How shore humidity and AC affect drying, and how to schedule. Call (609) 377-4226.",
   openGraph: {
     title: "Summer Interior Painting in South Jersey",
     description: "Why summer is one of the best windows to repaint inside — and how we work around shore humidity in Atlantic County homes.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/summer-interior-painting-south-jersey",
-    images: [{ url: "/bedroom-repaint-blue-to-white-before-after-pleasantville-nj.webp", width: 1200, height: 630, alt: "Bedroom interior repaint before and after in Pleasantville, NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Summer Interior Painting in South Jersey",
     description: "Why summer is one of the best windows to repaint inside — and how we work around shore humidity in Atlantic County homes.",
-    images: ["/bedroom-repaint-blue-to-white-before-after-pleasantville-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/summer-interior-painting-south-jersey" },
 };

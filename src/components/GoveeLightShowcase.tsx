@@ -95,7 +95,7 @@ export default function GoveeLightShowcase() {
           <div className="relative aspect-[4/3] sm:aspect-[16/10]">
             {/* stacked crossfade — opacity swap instead of a hard image switch */}
             {scenes.map((s, i) => (
-              <Image key={s.key} src={s.src} alt={i === active ? s.alt : ""} fill priority={false} sizes="(max-width: 896px) 100vw, 896px" className={`object-cover transition-opacity duration-700 ${i === active ? "opacity-100" : "opacity-0"}`} />
+              <Image key={s.key} src={s.src} alt={i === active ? s.alt : ""} aria-hidden={i !== active} fill priority={false} sizes="(max-width: 896px) 100vw, 896px" className={`object-cover transition-opacity duration-700 ${i === active ? "opacity-100" : "opacity-0"}`} />
             ))}
           </div>
           <div className="p-4 flex flex-col sm:flex-row sm:items-center gap-4 bg-white">

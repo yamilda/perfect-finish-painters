@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/epoxy-floor-coating",
-    images: [{ url: "/basement-floor-epoxy-coating-before-after-galloway-nj.webp", width: 1200, height: 900, alt: "Basement floor epoxy coating before and after in Galloway NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Epoxy Floor Coating in Atlantic County NJ | Perfect Finish",
     description:
       "Pro epoxy floor coating in Atlantic County NJ — garage floors, basements, workshops. Durable, stain-resistant finish. Free quote — 609-377-4226.",
-    images: ["/basement-floor-epoxy-coating-before-after-galloway-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/epoxy-floor-coating" },
 };
@@ -119,7 +119,7 @@ export default function EpoxyFloorCoatingPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/basement-floor-epoxy-coating-before-after-galloway-nj.webp" alt="Basement floor epoxy coating before and after in Galloway NJ by Perfect Finish Painters" width={600} height={450} className="w-full h-auto" />
+                <Image src="/basement-floor-epoxy-coating-before-after-galloway-nj.webp" alt="Before and after of a Galloway basement: stained bare concrete around a furnace and workbench, then a smooth light-gray coated floor" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

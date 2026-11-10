@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/garage-door-painting",
-    images: [{ url: "/garage-door-painting-wood-stain-before-after-brigantine-nj.webp", width: 1200, height: 900, alt: "Garage door painting wood stain before and after in Brigantine NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Garage Door Painting in Atlantic County NJ | Perfect Finish",
     description:
       "Pro garage door painting in Atlantic County NJ — wood stain or solid color, UV & salt-tolerant. Serving Mays Landing & South Jersey. Free quote: 609-377-4226.",
-    images: ["/garage-door-painting-wood-stain-before-after-brigantine-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/garage-door-painting" },
 };
@@ -118,7 +118,7 @@ export default function GarageDoorPaintingPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/garage-door-painting-wood-stain-before-after-brigantine-nj.webp" alt="Garage door wood-grain stain before and after in Brigantine NJ by Perfect Finish Painters" width={600} height={450} className="w-full h-auto" />
+                <Image src="/garage-door-painting-wood-stain-before-after-brigantine-nj.webp" alt="Before and after of a carriage-style garage door in Brigantine: white panels refinished to a brown wood-grain look, with gray shingle siding and a white frame" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

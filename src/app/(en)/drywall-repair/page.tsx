@@ -114,7 +114,7 @@ export default function DrywallRepairPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/drywall-ceiling-repair-before-after-mays-landing-nj.webp" alt="Drywall repair project by Perfect Finish Painters in South Jersey" width={600} height={450} className="w-full h-auto" />
+                <Image src="/drywall-ceiling-repair-before-after-mays-landing-nj.webp" alt="Before and after of a stained, patched drywall ceiling in a Mays Landing living area repaired and painted smooth white, with walls going from beige to light gray" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

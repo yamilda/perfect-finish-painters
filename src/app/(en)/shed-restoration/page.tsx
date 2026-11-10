@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/shed-restoration",
-    images: [{ url: "/shed-exterior-painting-before-after-mays-landing-nj.webp", width: 1200, height: 900, alt: "Shed restoration before and after in Mays Landing NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shed Restoration in Atlantic County NJ | Perfect Finish",
     description: "Shed restoration & painting in Atlantic County NJ — wood rot repair, scraping, priming, weather-resistant finish. Free estimate — 609-377-4226.",
-    images: ["/shed-exterior-painting-before-after-mays-landing-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/shed-restoration" },
 };
@@ -113,7 +113,7 @@ export default function ShedRestorationPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/shed-exterior-painting-before-after-mays-landing-nj.webp" alt="Shed restoration before and after in Mays Landing NJ by Perfect Finish Painters" width={600} height={450} className="w-full h-auto" />
+                <Image src="/shed-exterior-painting-before-after-mays-landing-nj.webp" alt="Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

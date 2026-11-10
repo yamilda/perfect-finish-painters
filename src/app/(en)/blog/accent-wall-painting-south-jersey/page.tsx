@@ -8,20 +8,20 @@ import FloatingCTA from "@/components/FloatingCTA";
 export const metadata: Metadata = {
   title: "Accent Wall Painting in South Jersey | Perfect Finish Painters",
   description:
-    "A bold navy accent wall transformed this South Jersey living room. See how the right accent wall adds depth and drama to a space — color choice, prep, and crisp lines by Perfect Finish Painters.",
+    "A navy accent wall changed this South Jersey living room. Color choice, prep, and crisp lines from Perfect Finish Painters in Mays Landing.",
   openGraph: {
     title: "Accent Wall Painting in South Jersey",
     description: "How a single bold accent wall transformed a living room — a recent Perfect Finish project in South Jersey.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/accent-wall-painting-south-jersey",
-    images: [{ url: "/projects/living-room-accent-wall.webp", width: 1600, height: 599, alt: "Living room accent wall before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Accent Wall Painting in South Jersey",
     description: "How a single bold accent wall transformed a living room — a recent Perfect Finish project in South Jersey.",
-    images: ["/projects/living-room-accent-wall.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/accent-wall-painting-south-jersey" },
 };

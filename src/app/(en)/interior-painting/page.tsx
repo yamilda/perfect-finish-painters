@@ -122,7 +122,7 @@ export default function InteriorPaintingPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp" alt="Interior painting project by Perfect Finish Painters in South Jersey" width={600} height={450} className="w-full h-auto" />
+                <Image src="/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp" alt="Before and after of a basement room in Egg Harbor Township: patched gray walls and a covered floor, then lilac walls and wood-look flooring under a drop ceiling" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

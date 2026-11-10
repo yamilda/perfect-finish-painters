@@ -92,7 +92,7 @@ export default function FlooringPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/radiator-painting-before-after-somers-point-nj.webp" alt="Flooring installation project by Perfect Finish Painters in South Jersey" width={600} height={450} className="w-full h-auto" />
+                <Image src="/bedroom-flooring-installation-painting-before-after-egg-harbor-township-nj.webp" alt="Before and after of a bedroom in Egg Harbor Township: bare OSB subfloor replaced with light wood-look vinyl plank, light gray walls, and white trim" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>
