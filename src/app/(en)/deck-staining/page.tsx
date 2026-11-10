@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/deck-staining",
-    images: [{ url: "/deck-exterior-painting-before-after-south-jersey-nj.webp", width: 1200, height: 900, alt: "Deck staining before and after in South Jersey NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Deck Staining in Atlantic County NJ | Perfect Finish",
     description:
       "Pro deck staining across Atlantic County NJ — cleaning, sanding, premium stain & seal. Serving Mays Landing & South Jersey. Free quote — 609-377-4226.",
-    images: ["/deck-exterior-painting-before-after-south-jersey-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/deck-staining" },
 };
@@ -119,7 +119,7 @@ export default function DeckStainingPage() {
             </div>
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/deck-exterior-painting-before-after-south-jersey-nj.webp" alt="Deck staining before and after in South Jersey by Perfect Finish Painters" width={600} height={450} className="w-full h-auto" />
+                <Image src="/deck-exterior-painting-before-after-south-jersey-nj.webp" alt="Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame" width={600} height={450} className="w-full h-auto" />
               </div>
             </ScrollReveal>
           </div>

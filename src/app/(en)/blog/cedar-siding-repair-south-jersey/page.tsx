@@ -78,12 +78,12 @@ export default function BlogPost() {
           <figure className="mb-8 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/exterior-siding-staining-before-after-egg-harbor-township-nj.webp"
-              alt="Cedar siding repair and staining before and after in Egg Harbor Township NJ"
+              alt="Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame"
               width={1200}
               height={675}
               className="w-full h-auto"
             />
-            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Cedar siding restoration we completed in Egg Harbor Township — before and after the repair + finish.</figcaption>
+            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Horizontal wood siding and a sliding door in Egg Harbor Township, before and after the exterior finish.</figcaption>
           </figure>
 
           <div className="prose prose-lg max-w-none text-[#374151] space-y-6" dangerouslySetInnerHTML={{ __html: `<h2>What Makes Cedar Siding So Popular in South Jersey?</h2><p>Cedar siding is renowned for its timeless elegance and natural resistance to decay, making it a favorite among homeowners in South Jersey areas like Mays Landing, NJ. This wood type offers excellent insulation and a rustic charm that complements the region's coastal and suburban landscapes. However, exposure to harsh weather, moisture, and pests can lead to damage, necessitating professional cedar siding repair to maintain its integrity and appearance.</p><h2>What Are the Common Issues with Cedar Siding?</h2><p>Over time, cedar siding can face several challenges that affect its functionality and aesthetics. Recognizing these early can prevent costly replacements.</p><ul><li><strong>Rot and Decay:</strong> Moisture infiltration can cause wood rot, especially in humid South Jersey climates.</li><li><strong>Cracking and Splitting:</strong> Temperature fluctuations and sun exposure may lead to cracks in the siding.</li><li><strong>Insect Damage:</strong> Termites and other pests are common culprits in damaging cedar structures.</li><li><strong>Fading and Discoloration:</strong> UV rays can fade the natural color, requiring repainting or staining as part of South Jersey painting services.</li></ul><h3>Signs You Need Cedar Siding Repair</h3><p>Look out for visible warping, soft spots in the wood, or peeling paint. If you notice these, it's time to call in experts like Perfect Finish Painters for a thorough inspection.</p><h2>What Does the Cedar Siding Repair Process Look Like?</h2><p>At Perfect Finish Painters, our repair process is meticulous and tailored to South Jersey homes. We start with a detailed assessment to identify all issues.</p><ol><li><strong>Inspection:</strong> Evaluating the extent of damage.</li><li><strong>Preparation:</strong> Removing damaged sections and cleaning the area.</li><li><strong>Repair:</strong> Replacing boards, sealing gaps, and applying protective treatments.</li><li><strong>Finishing:</strong> Painting or staining to match your home's exterior, leveraging our expertise in South Jersey painting services.</li></ol><h3>Benefits of Professional Repair</h3><p>Opting for professional cedar siding repair ensures longevity, energy efficiency, and increased property value. Our team uses high-quality materials suited to the local environment, preventing future issues.</p><h2>Why Choose Perfect Finish Painters for Cedar Siding Repair in South Jersey?</h2><p>Based in Mays Landing, NJ, Perfect Finish Painters brings years of experience in exterior home improvements. We combine cedar siding repair with comprehensive South Jersey painting services to deliver stunning results. Our commitment to quality and customer satisfaction sets us apart in the region.</p>` }} />
@@ -91,13 +91,13 @@ export default function BlogPost() {
           <figure className="my-8 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/shed-exterior-painting-before-after-mays-landing-nj.webp"
-              alt="Exterior wood repair and refinishing on a shed in Mays Landing NJ"
+              alt="Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim"
               width={1200}
               height={675}
               className="w-full h-auto"
               loading="lazy"
             />
-            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">The same exterior-wood repair approach applied to a Mays Landing shed — prep, replace damaged sections, refinish.</figcaption>
+            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">A Mays Landing shed repainted from weathered tan wood to white, with black doors, shutters, and corner trim.</figcaption>
           </figure>
 
           <div className="mt-12 bg-[#f1f5f9] rounded-2xl p-8 text-center">

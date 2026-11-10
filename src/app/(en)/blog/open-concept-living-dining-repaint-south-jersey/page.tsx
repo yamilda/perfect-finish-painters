@@ -6,22 +6,22 @@ import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata: Metadata = {
-  title: "Open-Concept Living & Dining Repaint in South Jersey | Perfect Finish",
+  title: "Open-Concept Living & Dining Repaint | Perfect Finish",
   description:
-    "Drywall repair around the pass-through plus a full interior repaint tied this open-concept living and dining space together. A recent Perfect Finish project in South Jersey.",
+    "Drywall repair at the pass-through and a full repaint tied this open living and dining space together. A Perfect Finish project in South Jersey.",
   openGraph: {
     title: "Open-Concept Living & Dining Repaint in South Jersey",
     description: "Drywall repair and a full repaint that pulled an open-concept living and dining area together — a recent Perfect Finish project.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/open-concept-living-dining-repaint-south-jersey",
-    images: [{ url: "/projects/open-concept-living-dining.webp", width: 1600, height: 767, alt: "Open-concept living and dining repaint before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Open-Concept Living & Dining Repaint in South Jersey",
     description: "Drywall repair and a full repaint that pulled an open-concept living and dining area together — a recent Perfect Finish project.",
-    images: ["/projects/open-concept-living-dining.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/open-concept-living-dining-repaint-south-jersey" },
 };

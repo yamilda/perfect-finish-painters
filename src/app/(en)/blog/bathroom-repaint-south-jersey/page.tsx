@@ -8,20 +8,20 @@ import FloatingCTA from "@/components/FloatingCTA";
 export const metadata: Metadata = {
   title: "Bathroom Repaint in South Jersey | Perfect Finish Painters",
   description:
-    "A tired bathroom refreshed with a clean repaint — walls, trim, and beadboard ceiling — using moisture-resistant paint built for South Jersey humidity. A recent Perfect Finish project.",
+    "Walls, trim, and a beadboard ceiling repainted with moisture-resistant paint in a South Jersey bathroom. A Perfect Finish Painters project.",
   openGraph: {
     title: "Bathroom Repaint in South Jersey",
     description: "A dated bathroom brought back to life with the right moisture-resistant paint and crisp prep — a recent Perfect Finish project.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/bathroom-repaint-south-jersey",
-    images: [{ url: "/projects/bathroom-repaint.webp", width: 1600, height: 1218, alt: "Bathroom repaint before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bathroom Repaint in South Jersey",
     description: "A dated bathroom brought back to life with the right moisture-resistant paint and crisp prep — a recent Perfect Finish project.",
-    images: ["/projects/bathroom-repaint.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/bathroom-repaint-south-jersey" },
 };

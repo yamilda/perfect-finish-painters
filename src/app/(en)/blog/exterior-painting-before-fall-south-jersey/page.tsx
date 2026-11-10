@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/exterior-painting-before-fall-south-jersey",
-    images: [{ url: "/deck-exterior-painting-before-after-south-jersey-nj.webp", width: 1804, height: 1200, alt: "Deck and exterior painting before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Exterior Painting Before Fall in South Jersey",
     description: "Why late August through October is the last — and often best — exterior painting window of the year at the shore.",
-    images: ["/deck-exterior-painting-before-after-south-jersey-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/exterior-painting-before-fall-south-jersey" },
 };
@@ -79,13 +79,13 @@ export default function ExteriorBeforeFallPost() {
           <figure className="mb-8 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/deck-exterior-painting-before-after-south-jersey-nj.webp"
-              alt="Deck and home exterior painting transformation, before and after, in South Jersey"
+              alt="Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame"
               width={1804}
               height={1200}
               className="w-full h-auto"
               priority
             />
-            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">A South Jersey deck and exterior refresh — finished in the early-fall window, sealed before winter.</figcaption>
+            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">A South Jersey siding and sliding-door refresh finished in the early-fall window.</figcaption>
           </figure>
 
           <div className="prose prose-lg max-w-none text-[#374151] space-y-6">

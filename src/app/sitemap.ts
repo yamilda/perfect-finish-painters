@@ -4,12 +4,12 @@ import { serviceAreas } from '@/data/service-areas'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://perfectfinishpainter.com'
 
-  // Dates kept reasonably current so search engines and AI crawlers see recent activity.
-  // Update these when you ship meaningful content or page changes.
-  const defaultDate = '2026-06-28'
-  const homeDate = '2026-06-22'       // hero + tough jobs refresh
-  const summerBlogDate = '2026-06-23' // new summer interior post
-  const goveeDate = '2026-08-19'      // new Govee permanent lighting service page
+  // Dates reflect the last real HTML change. The 2026-11-10 pass updated
+  // alt text, social cards, and metadata across the site.
+  const defaultDate = '2026-11-10'
+  const homeDate = '2026-11-10'
+  const summerBlogDate = '2026-11-10'
+  const goveeDate = '2026-11-10'
 
   const cityPages = serviceAreas.map((area) => ({
     url: `${baseUrl}/${area.slug}`,
@@ -213,25 +213,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/wallpaper-removal-repaint-south-jersey`,
-      lastModified: '2026-07-14',
+      lastModified: '2026-11-10',
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog/govee-permanent-lighting-painters-south-jersey`,
-      lastModified: '2026-08-04',
+      lastModified: '2026-11-10',
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog/exterior-painting-before-fall-south-jersey`,
-      lastModified: '2026-08-18',
+      lastModified: '2026-11-10',
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
     {
       url: `${baseUrl}/blog/permanent-christmas-lights-south-jersey`,
-      lastModified: '2026-09-01',
+      lastModified: '2026-11-10',
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },

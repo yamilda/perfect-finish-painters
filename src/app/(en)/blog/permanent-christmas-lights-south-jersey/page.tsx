@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/permanent-christmas-lights-south-jersey",
-    images: [{ url: "/exterior-door-painting-black-linwood-nj.webp", width: 1440, height: 1920, alt: "Freshly painted black front door and exterior trim in Linwood, NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Permanent Christmas Lights in South Jersey",
     description: "Never hang holiday lights again — how permanent Govee roofline lighting works, and why September installs beat the November rush.",
-    images: ["/exterior-door-painting-black-linwood-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/permanent-christmas-lights-south-jersey" },
 };

@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Perfect Finish Painters",
   description:
     "Privacy policy for Perfect Finish Painters LLC. How we collect, use, and protect the information you share when requesting a painting estimate in South Jersey.",
+  openGraph: {
+    title: "Privacy Policy | Perfect Finish Painters",
+    description:
+      "Privacy policy for Perfect Finish Painters LLC. How we collect, use, and protect the information you share when requesting a painting estimate in South Jersey.",
+    type: "website",
+    locale: "en_US",
+    url: "https://perfectfinishpainter.com/privacy",
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Perfect Finish Painters",
+    description:
+      "Privacy policy for Perfect Finish Painters LLC. How we collect, use, and protect the information you share when requesting a painting estimate in South Jersey.",
+    images: ["/og-card.jpg"],
+  },
   alternates: { canonical: "https://perfectfinishpainter.com/privacy" },
   robots: { index: true, follow: true },
 };

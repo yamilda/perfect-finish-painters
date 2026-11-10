@@ -10,6 +10,7 @@ interface ServiceCard {
   // Omitted while a service has no real job photo yet — the card renders a
   // branded placeholder instead of borrowing an unrelated or stock image.
   image?: string;
+  alt?: string;
   shortDesc: string;
   details: string[];
   icon: React.ReactNode;
@@ -20,6 +21,7 @@ const services: ServiceCard[] = [
     title: "Interior Painting",
     href: "/interior-painting",
     image: "/bedroom-repaint-blue-to-white-before-after-pleasantville-nj.webp",
+    alt: "Before and after of a Pleasantville bedroom: blue walls with spackle patches and covered furniture, then white walls, a gray bed, and wood-look flooring",
     shortDesc: "Transform any room with fresh, vibrant colors. Walls, ceilings, trim, and more.",
     details: [
       "Living rooms, bedrooms, kitchens, bathrooms & hallways",
@@ -39,6 +41,7 @@ const services: ServiceCard[] = [
     title: "Exterior Painting",
     href: "/exterior-painting",
     image: "/exterior-siding-staining-before-after-egg-harbor-township-nj.webp",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame",
     shortDesc: "Boost curb appeal and protect your home from the elements with quality exterior paint.",
     details: [
       "Siding, stucco, brick & vinyl surfaces",
@@ -58,6 +61,7 @@ const services: ServiceCard[] = [
     title: "Drywall Repairs",
     href: "/drywall-repair",
     image: "/living-room-ceiling-drywall-repair-before-after-absecon-nj.webp",
+    alt: "Before and after of an Absecon living room ceiling: a large peeled patch above the doorway repaired to a smooth white ceiling with crown molding",
     shortDesc: "Fix holes, cracks, and damage. We restore your walls to a smooth, paint-ready finish.",
     details: [
       "Small nail holes to large patch repairs",
@@ -77,6 +81,7 @@ const services: ServiceCard[] = [
     title: "Flooring",
     href: "/flooring",
     image: "/bedroom-flooring-installation-painting-before-after-egg-harbor-township-nj.webp",
+    alt: "Before and after of a bedroom in Egg Harbor Township: bare OSB subfloor replaced with light wood-look vinyl plank, light gray walls, and white trim",
     shortDesc: "Complete your renovation with professional flooring installation and refinishing.",
     details: [
       "Hardwood, laminate & vinyl plank installation",
@@ -96,6 +101,7 @@ const services: ServiceCard[] = [
     title: "Deck Staining",
     href: "/deck-staining",
     image: "/deck-exterior-painting-before-after-south-jersey-nj.webp",
+    alt: "Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame",
     shortDesc: "Protect your deck from South Jersey weather with professional staining, sealing, and wood repair.",
     details: [
       "Pressure washing & stripping old finish",
@@ -115,6 +121,7 @@ const services: ServiceCard[] = [
     title: "Shed Restoration",
     href: "/shed-restoration",
     image: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
+    alt: "Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim",
     shortDesc: "Bring your shed back to life with professional restoration, repair, and weather-resistant painting.",
     details: [
       "Full shed inspection & assessment",
@@ -134,6 +141,7 @@ const services: ServiceCard[] = [
     title: "Ceiling Painting",
     href: "/ceiling-painting",
     image: "/kitchen-ceiling-water-damage-drywall-repair-before-after-galloway-nj.webp",
+    alt: "Before and after of a Galloway kitchen ceiling: open holes with exposed insulation and plastic sheeting, then a smooth white ceiling with a vent",
     shortDesc: "Brighten any room with a freshly painted ceiling — flat, vaulted, or textured.",
     details: [
       "Flat & smooth ceiling painting",
@@ -152,7 +160,8 @@ const services: ServiceCard[] = [
   {
     title: "Cabinet Painting",
     href: "/cabinet-painting",
-    image: "/dining-room-wainscoting-painting-before-after-egg-harbor-township-nj.webp",
+    image: "/kitchen-drywall-repair-painting-before-after-northfield-nj.webp",
+    alt: "Before and after of a kitchen corner: open drywall cutouts along a gray wall, then a finished wall with white shaker cabinets, a built-in microwave, and a gray veined counter",
     shortDesc: "Transform your kitchen for a fraction of replacement cost with professional cabinet painting.",
     details: [
       "Full kitchen cabinet painting",
@@ -172,6 +181,7 @@ const services: ServiceCard[] = [
     title: "Fence Staining",
     href: "/fence-staining",
     image: "/fence-gate-painting-black-northfield-nj.webp",
+    alt: "Black pointed-picket wooden fence with a lattice skirt, painted beside a house with purple siding and a brick chimney",
     shortDesc: "Protect and restore wood fences with premium penetrating stain built for South Jersey weather.",
     details: [
       "Pressure washing & mildew treatment",
@@ -191,6 +201,7 @@ const services: ServiceCard[] = [
     title: "Epoxy Floor Coating",
     href: "/epoxy-floor-coating",
     image: "/basement-floor-epoxy-coating-before-after-galloway-nj.webp",
+    alt: "Before and after of a Galloway basement: stained bare concrete around a furnace and workbench, then a smooth light-gray coated floor",
     shortDesc: "Transform garage, basement, and workshop floors with diamond-ground, 100%-solids epoxy systems.",
     details: [
       "Diamond grinding for proper adhesion",
@@ -210,6 +221,7 @@ const services: ServiceCard[] = [
     title: "Govee Permanent Lighting",
     href: "/govee-permanent-lighting",
     image: "/govee-permanent-lighting-warm-white-stone-ranch-linwood-nj.webp",
+    alt: "Night view of a stone-front ranch in Linwood with warm white permanent lights tracing the dormers, eaves, and garage roofline",
     shortDesc: "Permanent roofline lighting installed by the crew that already works your fascia and trim.",
     details: [
       "Govee Permanent Outdoor Lights Pro",
@@ -229,6 +241,7 @@ const services: ServiceCard[] = [
     title: "Garage Door Painting",
     href: "/garage-door-painting",
     image: "/garage-door-painting-wood-stain-before-after-brigantine-nj.webp",
+    alt: "Before and after of a carriage-style garage door in Brigantine: white panels refinished to a brown wood-grain look, with gray shingle siding and a white frame",
     shortDesc: "Upgrade your curb appeal with a custom painted or stained garage door finish.",
     details: [
       "Wood-grain stain finishes",
@@ -276,7 +289,7 @@ export default function ServicesSection() {
                     <>
                       <Image
                         src={service.image}
-                        alt={`${service.title} by Perfect Finish Painters in South Jersey`}
+                        alt={service.alt ?? service.title}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"

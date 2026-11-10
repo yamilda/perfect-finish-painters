@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/wallpaper-removal-repaint-south-jersey",
-    images: [{ url: "/bathroom-wallpaper-removal-painting-before-after-absecon-nj.webp", width: 1440, height: 960, alt: "Bathroom wallpaper removal and repaint before and after in Absecon, NJ" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wallpaper Removal & Repaint in South Jersey",
     description: "Why wallpaper removal is a wall-restoration job, not a peeling job — and what a clean repaint takes in older Atlantic County homes.",
-    images: ["/bathroom-wallpaper-removal-painting-before-after-absecon-nj.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/wallpaper-removal-repaint-south-jersey" },
 };

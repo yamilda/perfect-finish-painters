@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   title: "Terms of Service | Perfect Finish Painters",
   description:
     "Terms of service for the Perfect Finish Painters website and online estimate requests. Project contracts are signed separately before any work begins.",
+  openGraph: {
+    title: "Terms of Service | Perfect Finish Painters",
+    description:
+      "Terms of service for the Perfect Finish Painters website and online estimate requests. Project contracts are signed separately before any work begins.",
+    type: "website",
+    locale: "en_US",
+    url: "https://perfectfinishpainter.com/terms",
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Perfect Finish Painters",
+    description:
+      "Terms of service for the Perfect Finish Painters website and online estimate requests. Project contracts are signed separately before any work begins.",
+    images: ["/og-card.jpg"],
+  },
   alternates: { canonical: "https://perfectfinishpainter.com/terms" },
   robots: { index: true, follow: true },
 };

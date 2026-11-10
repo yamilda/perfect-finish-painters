@@ -6,22 +6,22 @@ import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata: Metadata = {
-  title: "Kitchen Drywall Repair & Repaint in South Jersey | Perfect Finish",
+  title: "Kitchen Drywall Repair in South Jersey | Perfect Finish",
   description:
-    "Patched, damaged drywall behind the counter turned into a seamless, freshly painted kitchen wall. A recent drywall repair and repaint project by Perfect Finish Painters in South Jersey.",
+    "A damaged kitchen wall patched seamless and repainted. Drywall repair by Perfect Finish Painters in South Jersey.",
   openGraph: {
     title: "Kitchen Drywall Repair & Repaint in South Jersey",
     description: "Seamless drywall repair and a clean repaint that makes the patch disappear — a recent Perfect Finish kitchen project.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/kitchen-drywall-repair-south-jersey",
-    images: [{ url: "/projects/kitchen-drywall-repair.webp", width: 1600, height: 1065, alt: "Kitchen drywall repair and repaint before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kitchen Drywall Repair & Repaint in South Jersey",
     description: "Seamless drywall repair and a clean repaint that makes the patch disappear — a recent Perfect Finish kitchen project.",
-    images: ["/projects/kitchen-drywall-repair.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/kitchen-drywall-repair-south-jersey" },
 };

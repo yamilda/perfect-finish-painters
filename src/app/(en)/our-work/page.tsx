@@ -67,6 +67,7 @@ export default function OurWorkPage() {
           <Image
             src="/shed-exterior-painting-before-after-mays-landing-nj.webp"
             alt=""
+            aria-hidden
             fill
             className="object-cover opacity-20"
             sizes="100vw"

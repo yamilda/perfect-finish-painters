@@ -6,22 +6,22 @@ import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata: Metadata = {
-  title: "Garage Drywall Finishing & Painting in South Jersey | Perfect Finish",
+  title: "Garage Drywall Finishing in South Jersey | Perfect Finish",
   description:
-    "See how we turned a bare, taped-drywall garage into a clean, fully finished and painted space in South Jersey. Drywall finishing, ceiling and wall painting by Perfect Finish Painters.",
+    "A bare taped-drywall garage finished and painted in South Jersey — seams, ceiling, and walls by Perfect Finish Painters.",
   openGraph: {
     title: "Garage Drywall Finishing & Painting in South Jersey",
     description: "Bare taped drywall to a fully finished, painted garage — a recent Perfect Finish project in South Jersey.",
     type: "article",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/blog/garage-drywall-finishing-south-jersey",
-    images: [{ url: "/projects/garage-finishing-1.webp", width: 1600, height: 599, alt: "Garage drywall finishing before and after in South Jersey" }],
+    images: [{ url: "/og-card.jpg", width: 1200, height: 630, alt: "Perfect Finish Painters — interior, exterior & drywall in Mays Landing, NJ" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Garage Drywall Finishing & Painting in South Jersey",
     description: "Bare taped drywall to a fully finished, painted garage — a recent Perfect Finish project in South Jersey.",
-    images: ["/projects/garage-finishing-1.webp"],
+    images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/blog/garage-drywall-finishing-south-jersey" },
 };

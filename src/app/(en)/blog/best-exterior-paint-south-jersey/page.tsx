@@ -79,12 +79,12 @@ export default function BestExteriorPaintPost() {
           <figure className="mb-8 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/deck-exterior-painting-before-after-south-jersey-nj.webp"
-              alt="Exterior deck repaint before and after on a South Jersey home"
+              alt="Before and after of weathered horizontal wood siding and a dark sliding door beside an unstained gray deck, refreshed to orange-brown siding with a white slider frame"
               width={1200}
               height={675}
               className="w-full h-auto"
             />
-            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">A recent exterior repaint we did in South Jersey — same product family discussed below.</figcaption>
+            <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">A recent South Jersey siding and sliding-door repaint — the kind of exterior coating discussed below.</figcaption>
           </figure>
 
           <div className="prose prose-lg max-w-none text-[#374151] space-y-6">
@@ -135,13 +135,13 @@ export default function BestExteriorPaintPost() {
             <figure className="my-8 rounded-2xl overflow-hidden shadow-lg not-prose">
               <Image
                 src="/exterior-siding-staining-before-after-egg-harbor-township-nj.webp"
-                alt="Cedar siding stained and protected against coastal humidity in Egg Harbor Township NJ"
+                alt="Before and after of weathered horizontal wood siding and a dark sliding door on a deck in Egg Harbor Township, refreshed to orange-brown siding with a white slider frame"
                 width={1200}
                 height={675}
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Siding stained in Egg Harbor Township — the kind of mildew-resistant finish that holds up to South Jersey humidity.</figcaption>
+              <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Horizontal wood siding and a sliding door in Egg Harbor Township, before and after a fresh exterior finish.</figcaption>
             </figure>
 
             <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">Why Does Prep Matter More Than the Paint?</h2>
