@@ -39,8 +39,8 @@ const scenes = [
     key: "multi",
     label: "Multicolor",
     chip: "linear-gradient(90deg,#dc2626,#16a34a,#7c3aed)",
-    src: "/govee-permanent-lighting-multicolor-ranch-pleasantville-nj.webp",
-    alt: "Pleasantville NJ ranch with red, green, and purple permanent lighting zones",
+    src: "/govee-permanent-lighting-multicolor-ranch-galloway-nj.webp",
+    alt: "Galloway NJ ranch with red, green, and purple permanent lighting zones",
     caption: "Per-zone control — one house, three colors at once.",
   },
   {

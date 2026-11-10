@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const lastUpdated = "April 22, 2026";
+const lastUpdated = "November 9, 2026";
 
 export default function PrivacyPage() {
   const breadcrumbJsonLd = {
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      <div className="pt-28 px-4 sm:px-6 lg:px-8">
+      <div className="pt-28 sm:pt-36 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <nav aria-label="Breadcrumb" className="text-sm text-[#64748b]">
             <ol className="flex items-center gap-2">
@@ -67,8 +67,11 @@ export default function PrivacyPage() {
             <li>
               <strong>Usage data</strong> — pages visited, referring URL, approximate location
               (city-level), browser type, device type, and time spent on the site. This is
-              collected through Google Analytics, the Meta (Facebook) Pixel, and Vercel
-              Analytics (our hosting provider&apos;s privacy-friendly page-view counter).
+              collected through Google Analytics, the Meta (Facebook) Pixel, Vercel
+              Analytics (our hosting provider&apos;s privacy-friendly page-view counter), and
+              Semetry, a privacy-friendly analytics service from our website provider that
+              measures anonymous page views, clicks, device type, and form submissions. Semetry
+              does not collect the values you enter into forms.
             </li>
             <li>
               <strong>Cookies</strong> — small files stored on your device to remember settings
@@ -97,6 +100,7 @@ export default function PrivacyPage() {
           <p>We share limited information only with service providers that help us run the business:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>Vercel</strong> — website hosting and aggregated page-view analytics.</li>
+            <li><strong>SJ Tech Solution LLC</strong> — our website provider; runs Semetry analytics and delivers contact-form messages to us.</li>
             <li><strong>Google</strong> — Analytics, Ads, and Google Business Profile.</li>
             <li><strong>Meta (Facebook)</strong> — Pixel for ad measurement and retargeting.</li>
             <li><strong>Email provider</strong> — to receive and respond to your messages.</li>

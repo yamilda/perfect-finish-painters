@@ -201,6 +201,11 @@ export default function EnRootLayout({
       >
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <main id="main-content">{children}</main>
+        <Script
+          src="https://semetry.vercel.app/tracker.js"
+          data-site-key="perfect-finish-painters"
+          strategy="afterInteractive"
+        />
         <Analytics />
       </body>
     </html>

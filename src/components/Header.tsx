@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { HOLIDAY_LIGHTING_PROMO, GOVEE_PAGE_HREF } from "@/data/promo";
 
 const enToEs: Record<string, string> = {
   "/painters-pleasantville-nj": "/pintores-pleasantville-nj",
@@ -246,6 +247,16 @@ export default function Header() {
               >
                 Services
               </Link>
+              {HOLIDAY_LIGHTING_PROMO && (
+                <Link
+                  href={GOVEE_PAGE_HREF}
+                  className="text-[#64748b] hover:text-[#1e3a5f] transition-colors inline-flex items-center gap-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#ff5252]" aria-hidden="true" />
+                  Holiday Lights (Govee)
+                </Link>
+              )}
               <Link
                 href="/our-work"
                 className="text-[#64748b] hover:text-[#1e3a5f] transition-colors"

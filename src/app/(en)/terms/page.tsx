@@ -29,7 +29,7 @@ export default function TermsPage() {
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      <div className="pt-28 px-4 sm:px-6 lg:px-8">
+      <div className="pt-28 sm:pt-36 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <nav aria-label="Breadcrumb" className="text-sm text-[#64748b]">
             <ol className="flex items-center gap-2">

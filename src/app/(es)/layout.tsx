@@ -168,6 +168,11 @@ export default function EsRootLayout({
       >
         <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
         <main id="main-content">{children}</main>
+        <Script
+          src="https://semetry.vercel.app/tracker.js"
+          data-site-key="perfect-finish-painters"
+          strategy="afterInteractive"
+        />
         <Analytics />
       </body>
     </html>

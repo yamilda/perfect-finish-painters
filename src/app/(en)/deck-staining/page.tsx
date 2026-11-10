@@ -80,7 +80,7 @@ export default function DeckStainingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <div className="pt-28 px-4 sm:px-6 lg:px-8">
+      <div className="pt-28 sm:pt-36 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="text-sm text-[#64748b]">
             <ol className="flex items-center gap-2">

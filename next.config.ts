@@ -26,16 +26,17 @@ const nextConfig: NextConfig = {
     // - Google Tag Manager / Analytics (GA4)
     // - Facebook Pixel
     // - Vercel Analytics
+    // - Semetry (SJ Tech analytics: semetry.vercel.app tracker + /api/events)
     // - Google Maps iframe (on /contact)
     // 'unsafe-inline' on script-src + style-src is required because Next.js
     // emits inline hydration scripts and Tailwind injects inline styles.
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://va.vercel-scripts.com https://www.google-analytics.com",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://va.vercel-scripts.com https://www.google-analytics.com https://semetry.vercel.app",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "img-src 'self' data: blob: https://www.facebook.com https://www.google-analytics.com https://www.googletagmanager.com https://*.google-analytics.com",
       "font-src 'self' data: https://fonts.gstatic.com",
-      "connect-src 'self' https://www.google-analytics.com https://www.facebook.com https://connect.facebook.net https://vitals.vercel-insights.com https://*.google-analytics.com",
+      "connect-src 'self' https://www.google-analytics.com https://www.facebook.com https://connect.facebook.net https://vitals.vercel-insights.com https://*.google-analytics.com https://semetry.vercel.app",
       "frame-src https://www.google.com https://www.facebook.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
@@ -50,7 +51,6 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
-          { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
           { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },

@@ -199,7 +199,7 @@ export default function GoveePermanentLightingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <div className="pt-28 px-4 sm:px-6 lg:px-8">
+      <div className="pt-28 sm:pt-36 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="text-sm text-[#64748b]">
             <ol className="flex items-center gap-2 flex-wrap">
@@ -218,6 +218,16 @@ export default function GoveePermanentLightingPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-[#1e3a5f] mb-6">
             Govee Permanent Outdoor Lighting Installation in Atlantic County, NJ
           </h1>
+          <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-xl mb-8 bg-[#0f2438]">
+            <Image
+              src="/govee-permanent-lighting-tricolor-white-red-green-atlantic-city-nj.webp"
+              alt="Two-story home lit with red, white, and green Govee permanent lights along the roofline and porch"
+              fill
+              priority
+              sizes="(min-width: 896px) 896px, 100vw"
+              className="object-cover object-center"
+            />
+          </div>
           <p className="text-[#64748b] text-lg mb-6 leading-relaxed">
             Every December it&apos;s the same routine: the ladder comes out in the cold, half the string lights don&apos;t work, the clips that survived last year have gone brittle, and by mid-January the whole thing has to come down again — usually in worse weather than it went up in. Meanwhile the sagging line of lights that looked fine on day one is drooping between gutter hangers by New Year&apos;s.
           </p>

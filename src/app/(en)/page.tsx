@@ -10,6 +10,8 @@ import ContactForm from "@/components/ContactForm";
 import FloatingCTA from "@/components/FloatingCTA";
 import SherwinWilliamsBanner from "@/components/SherwinWilliamsBanner";
 import ToughJobsCard from "@/components/ToughJobsCard";
+import HolidayLightingPromo from "@/components/HolidayLightingPromo";
+import { HOLIDAY_LIGHTING_PROMO, GOVEE_PAGE_HREF } from "@/data/promo";
 import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT, reviews } from "@/data/reviews";
 
 import { serviceAreas } from "@/data/service-areas";
@@ -235,6 +237,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left — brand + CTA */}
           <div className="text-center lg:text-left">
+            {HOLIDAY_LIGHTING_PROMO && (
+              <Link
+                href={GOVEE_PAGE_HREF}
+                className="inline-flex items-center gap-2 mb-5 bg-white/10 hover:bg-white/15 border border-white/25 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors"
+              >
+                <span className="flex gap-1" aria-hidden="true">
+                  <span className="w-2 h-2 rounded-full bg-[#ff5252] shadow-[0_0_6px_#ff5252]" />
+                  <span className="w-2 h-2 rounded-full bg-[#69f0ae] shadow-[0_0_6px_#69f0ae]" />
+                  <span className="w-2 h-2 rounded-full bg-[#ffd54f] shadow-[0_0_6px_#ffd54f]" />
+                </span>
+                Now booking Govee&reg; holiday lighting
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+            )}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Painters in Mays Landing, NJ
             </h1>
@@ -308,6 +326,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Holiday Govee permanent lighting promo — seasonal, gated in src/data/promo.ts */}
+      {HOLIDAY_LIGHTING_PROMO && <HolidayLightingPromo />}
+
       {/* Sherwin-Williams Designer Paint Banner */}
       <div className="pt-12">
         <ScrollReveal>
@@ -354,53 +375,6 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-[#2563eb] hover:text-[#1d4ed8] font-semibold transition-colors"
               >
                 View all services &amp; pricing
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Seasonal add-on strip — Govee lighting upsell. Remove or swap the copy
-          when the season flips (interior work is the winter push). */}
-      <section className="pb-16 px-4 sm:px-6 lg:px-8" aria-labelledby="seasonal-addon-heading">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1e3a5f] via-[#1e3a5f] to-[#0f2438] border-2 border-dashed border-[#2563eb]/50 px-6 py-8 sm:px-10 sm:py-9 flex flex-wrap items-center justify-between gap-6">
-              <div className="pointer-events-none absolute -top-24 -right-16 w-72 h-72 rounded-full bg-[#2563eb]/20 blur-3xl" />
-              {/* Govee-style bulb string along the top edge */}
-              <div className="pointer-events-none absolute top-0 left-5 right-5 flex justify-between -translate-y-1/2" aria-hidden="true">
-                {Array.from({ length: 18 }).map((_, i) => {
-                  const c = ['#ff5252', '#ffd54f', '#69f0ae', '#40c4ff', '#e040fb'][i % 5];
-                  return (
-                    <span
-                      key={i}
-                      className="addon-bulb"
-                      style={{ background: c, boxShadow: `0 0 8px 1.5px ${c}`, animationDelay: `-${(i * 0.33).toFixed(2)}s` }}
-                    />
-                  );
-                })}
-              </div>
-              <div className="relative max-w-2xl">
-                <span className="inline-block bg-[#2563eb]/20 text-[#93c5fd] text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-3">
-                  Seasonal Add-On &middot; Govee&reg; Permanent Lighting
-                </span>
-                <h2 id="seasonal-addon-heading" className="text-2xl sm:text-3xl font-bold text-white">
-                  Add Govee permanent holiday lighting while we&rsquo;re on the ladders.
-                </h2>
-                <p className="text-white/80 mt-2">
-                  Painting your exterior this fall? Our crew is already at your roofline — add a
-                  Govee permanent lighting install in the same visit window. Color-matched track,
-                  app-controlled, up all year.
-                </p>
-              </div>
-              <Link
-                href="/govee-permanent-lighting"
-                className="relative inline-flex items-center gap-2 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-6 py-3.5 rounded-xl transition-colors whitespace-nowrap"
-              >
-                See the Lighting Add-On
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
