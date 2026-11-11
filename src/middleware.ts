@@ -33,5 +33,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  // Tab/home-screen icons are requested as /icon.png?<hash>; keep them out of
+  // the query-string cleaner so they don't take a 301 hop on every load.
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon.png|apple-icon.png).*)"],
 };
