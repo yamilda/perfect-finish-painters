@@ -217,6 +217,19 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Perfect Finish Painters. All
               rights reserved. | NJ HIC #13VH14120900 | Licensed &amp; Insured LLC
             </p>
+            <p className="text-[#94a3b8] text-xs mt-3">
+              Website &amp; SEO managed by{" "}
+              <a
+                href="https://sjtechllc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white"
+              >
+                SJ Tech Solution LLC
+              </a>
+              . We are not accepting SEO, marketing or website offers. Please
+              don&apos;t call or email us about them.
+            </p>
           </div>
         </div>
       </footer>
