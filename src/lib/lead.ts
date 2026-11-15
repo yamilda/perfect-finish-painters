@@ -1,6 +1,10 @@
 // Contact-form lead delivery: Senku (Brandon's lead dashboard) and the owner email run
 // concurrently, so one failing never drops the other. SJ Tech gets a hidden BCC copy
-// (LEAD_EMAIL_BCC). Never log or echo lead fields.
+// (LEAD_EMAIL_BCC). SJ Tech's spam guard is asked first; spam is delivered nowhere.
+// Never log or echo lead fields.
+
+// The ".ts" is for Node's test runner, which runs this file as-is (npm test).
+import { isSpamByLeadGuard } from "./lead-guard.ts";
 
 export const SENKU_URL = "https://app.senkulab.com/api/quiz-submission";
 export const SENKU_SLUG = "perfect-finish-painters";
@@ -123,4 +127,43 @@ export async function deliverLead(lead: Lead, env: Env, submissionId: string, fe
   const senkuSaved = senkuStatus >= 200 && senkuStatus < 300;
   const emailed = emailStatus >= 200 && emailStatus < 300;
   return { ok: senkuSaved || emailed, senkuStatus, emailStatus, senkuSaved, emailed };
+}
+
+type LeadResponse = { status: number; body: { ok: true; id?: string } | { error: string } };
+
+// Everything /api/lead does once the body is parsed: validate, honeypot, SJ Tech spam
+// guard, then deliver. Filtered spam gets the same success response as a real lead.
+export async function handleLead(
+  input: unknown,
+  env: Record<string, string | undefined> = process.env,
+  fetchFn: typeof fetch = fetch,
+): Promise<LeadResponse> {
+  const n = normalizeLead(input);
+  if (!n.ok) return { status: 400, body: { error: n.error } };
+  if (n.spam) return { status: 200, body: { ok: true } };
+
+  const { lead } = n;
+  const submissionId = lead.submissionId || crypto.randomUUID();
+  const elapsedMs = (input as { elapsedMs?: unknown }).elapsedMs;
+  const spam = await isSpamByLeadGuard(
+    { name: lead.name, email: lead.email, phone: lead.phone, message: lead.notes, fields: { service: lead.service } },
+    { elapsedMs: typeof elapsedMs === "number" ? elapsedMs : undefined, env, fetchFn },
+  );
+  if (spam) {
+    console.warn("lead filtered by SJ Tech guard");
+    return { status: 200, body: { ok: true, id: submissionId } };
+  }
+
+  const r = await deliverLead(lead, {
+    resendApiKey: env.RESEND_API_KEY,
+    from: env.LEAD_EMAIL_FROM,
+    to: env.LEAD_EMAIL_TO,
+    bcc: env.LEAD_EMAIL_BCC,
+  }, submissionId, fetchFn);
+
+  // PII-free delivery receipt for Vercel logs.
+  console.info(JSON.stringify({ evt: "lead_delivery", submissionId, senku: r.senkuStatus, email: r.emailStatus }));
+
+  if (!r.ok) return { status: 502, body: { error: "We couldn't send your message. Please call (609) 377-4226." } };
+  return { status: 200, body: { ok: true, id: submissionId } };
 }

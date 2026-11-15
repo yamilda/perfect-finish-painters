@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const lastUpdated = "April 22, 2026";
+const lastUpdated = "November 15, 2026";
 
 export default function TermsPage() {
   const breadcrumbJsonLd = {
@@ -132,6 +132,11 @@ export default function TermsPage() {
             <li>Copy, republish, or redistribute our photos, project descriptions, blog content, or pricing guides without written permission.</li>
             <li>Submit false information or impersonate another person through our forms.</li>
           </ul>
+          <p>
+            The contact form is for customer inquiries only. Using it to send unsolicited sales,
+            marketing or partnership offers is not permitted, and those messages are filtered
+            automatically.
+          </p>
 
           <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">Intellectual Property</h2>
           <p>
