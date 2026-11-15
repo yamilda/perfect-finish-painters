@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 const SERVICES = [
@@ -28,9 +28,6 @@ export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
   const submissionId = useRef<string | null>(null);
-  // When the form appeared, so the spam guard can tell an instant bot submit from a person.
-  const mountedAt = useRef(0);
-  useEffect(() => { mountedAt.current = Date.now(); }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -54,7 +51,8 @@ export default function ContactForm() {
           notes: fd.get("message"),
           website: fd.get("website"),
           submissionId: submissionId.current,
-          elapsedMs: mountedAt.current ? Date.now() - mountedAt.current : undefined,
+          // Time since page load (not mount): hydration-on-click can't make it read ~0.
+          elapsedMs: Math.round(performance.now()),
           utmSource: qs.get("utm_source") || undefined,
           utmMedium: qs.get("utm_medium") || undefined,
           utmCampaign: qs.get("utm_campaign") || undefined,
@@ -62,7 +60,8 @@ export default function ContactForm() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Something went wrong.");
-      if (typeof window.fbq === "function") window.fbq("track", "Lead");
+      // held = SJ Tech's guard filtered it as spam: same thank-you, but it is not a lead.
+      if (data.held !== true && typeof window.fbq === "function") window.fbq("track", "Lead");
       submissionId.current = null;
       form.reset();
       setStatus("sent");

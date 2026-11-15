@@ -1,7 +1,9 @@
 // Contact-form lead route: SJ Tech spam guard + delivery. Every request goes to a fake
 // fetch, so nothing here reaches Senku, Resend or the guard. Run: npm test
+// The last two tests read ContactForm.tsx as text (the runner can't load JSX).
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
+import { readFileSync } from "node:fs";
 import test, { mock } from "node:test";
 import { handleLead, SENKU_URL } from "../src/lib/lead.ts";
 import { isSpamByLeadGuard, LEAD_GUARD_SITE } from "../src/lib/lead-guard.ts";
@@ -42,15 +44,17 @@ function fakeFetch(guard = () => Response.json({ verdict: "pass", id: "g1" })) {
   return { calls, fetchFn, urls: () => calls.map((c) => c.url) };
 }
 
-test("guard says spam: same success response as a real lead, and nothing is delivered", async () => {
+test("guard says spam: a real lead's success response plus held: true, and nothing is delivered", async () => {
   warn.mock.resetCalls();
   info.mock.resetCalls();
   const spam = fakeFetch(() => Response.json({ verdict: "spam", id: "g2" }));
   const r = await handleLead(lead, ENV, spam.fetchFn);
 
   const pass = fakeFetch();
-  assert.deepEqual(r, await handleLead(lead, ENV, pass.fetchFn));
-  assert.deepEqual(r, { status: 200, body: { ok: true, id: ID } });
+  const delivered = await handleLead(lead, ENV, pass.fetchFn);
+  assert.deepEqual(delivered, { status: 200, body: { ok: true, id: ID } });
+  // Same status and body, plus the one field that tells the form not to count it as a lead.
+  assert.deepEqual(r, { status: delivered.status, body: { ...delivered.body, held: true } });
   assert.deepEqual(spam.urls(), [GUARD_URL]); // no Senku, no owner email, no BCC
   // One log line, no lead details in it.
   assert.deepEqual(warn.mock.calls.map((c) => c.arguments), [["lead filtered by SJ Tech guard"]]);
@@ -192,4 +196,44 @@ test("delivery failure still returns the 502 call-us error after a guard pass", 
   assert.equal(r.status, 502);
   assert.match(r.body.error, /\(609\) 377-4226/);
   assert.deepEqual(calls, [GUARD_URL, SENKU_URL, RESEND_URL]);
+});
+
+test("held is only on a guard spam verdict: delivered, guard-down, no-secret and honeypot replies never carry it", async () => {
+  const replies = {
+    delivered: await handleLead(lead, ENV, fakeFetch().fetchFn),
+    "guard down": await handleLead(lead, ENV, fakeFetch(() => new Response("down", { status: 500 })).fetchFn),
+    "no secret": await handleLead(lead, { ...ENV, LEAD_GUARD_SECRET: undefined }, fakeFetch().fetchFn),
+    honeypot: await handleLead({ ...lead, website: "https://spam.example" }, ENV, fakeFetch().fetchFn),
+  };
+  for (const [name, r] of Object.entries(replies)) {
+    assert.equal(r.status, 200, name);
+    assert.equal("held" in r.body, false, name);
+  }
+  const spam = await handleLead(lead, ENV, fakeFetch(() => Response.json({ verdict: "spam" })).fetchFn);
+  assert.equal(spam.body.held, true);
+});
+
+// The form itself, as text with its comments removed, so a comment that names a rule can
+// never satisfy a pin. `submit` is everything handleSubmit does before the component renders.
+const form = readFileSync(new URL("../src/components/ContactForm.tsx", import.meta.url), "utf8")
+  .replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/(^|\s)\/\/.*$/gm, "$1");
+const submit = form.slice(form.indexOf("const handleSubmit"), form.indexOf("return ("));
+
+test("contact form: elapsedMs is performance.now() read at submit, with no mount-time ref", () => {
+  // A mount-time ref read ~0 ms when React hydrated the form on the visitor's click, so
+  // real customers looked like instant bot submits and were filtered.
+  assert.match(submit, /\belapsedMs: Math\.round\(performance\.now\(\)\),/);
+  assert.equal(form.match(/elapsedMs/g).length, 1);
+  assert.doesNotMatch(form, /useEffect|mountedAt|Date\.now/);
+});
+
+test("contact form: a held reply still shows the thank-you but fires no Lead analytics", () => {
+  // The Meta Pixel Lead event is the form's only success analytics, and held skips it.
+  assert.match(submit, /if \(data\.held !== true && typeof window\.fbq === "function"\) window\.fbq\("track", "Lead"\);/);
+  assert.equal(form.match(/\bfbq\(/g).length, 1);
+  assert.doesNotMatch(form, /Semetry|gtag|dataLayer|sendBeacon/);
+  // held is read nowhere else, so the thank-you screen cannot depend on it.
+  assert.equal(form.match(/\bheld\b/g).length, 1);
+  assert.match(submit, /\n      setStatus\("sent"\);\n/);
 });

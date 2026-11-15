@@ -129,10 +129,11 @@ export async function deliverLead(lead: Lead, env: Env, submissionId: string, fe
   return { ok: senkuSaved || emailed, senkuStatus, emailStatus, senkuSaved, emailed };
 }
 
-type LeadResponse = { status: number; body: { ok: true; id?: string } | { error: string } };
+type LeadResponse = { status: number; body: { ok: true; id?: string; held?: true } | { error: string } };
 
 // Everything /api/lead does once the body is parsed: validate, honeypot, SJ Tech spam
-// guard, then deliver. Filtered spam gets the same success response as a real lead.
+// guard, then deliver. Filtered spam gets the same success response as a real lead plus
+// `held: true`, so the form shows its thank-you but does not count it as a lead.
 export async function handleLead(
   input: unknown,
   env: Record<string, string | undefined> = process.env,
@@ -151,7 +152,7 @@ export async function handleLead(
   );
   if (spam) {
     console.warn("lead filtered by SJ Tech guard");
-    return { status: 200, body: { ok: true, id: submissionId } };
+    return { status: 200, body: { ok: true, id: submissionId, held: true } };
   }
 
   const r = await deliverLead(lead, {

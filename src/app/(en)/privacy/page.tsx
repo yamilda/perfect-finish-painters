@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const lastUpdated = "November 9, 2026";
+const lastUpdated = "November 15, 2026";
 
 export default function PrivacyPage() {
   const breadcrumbJsonLd = {
@@ -122,6 +122,7 @@ export default function PrivacyPage() {
             <li><strong>Email provider</strong> — to receive and respond to your messages.</li>
             <li><strong>Payment processor</strong> — if you pay an invoice electronically, the processor handles card or bank data directly and we never see your full payment credentials.</li>
           </ul>
+          <p>SJ Tech, our website provider, screens contact-form messages for spam and keeps a copy of each message to make sure real requests are delivered.</p>
           <p>
             We may also disclose information if required by law, court order, or to enforce our
             terms or protect our rights.
