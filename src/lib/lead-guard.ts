@@ -37,7 +37,7 @@ export async function isSpamByLeadGuard(
       method: "POST",
       headers: { "content-type": "application/json", "x-sjtech-client": LEAD_GUARD_SITE, "x-sjtech-timestamp": ts, "x-sjtech-signature": sig },
       body,
-      signal: AbortSignal.timeout(opts.timeoutMs ?? 2500),
+      signal: AbortSignal.timeout(opts.timeoutMs ?? 6000),
     });
     if (!res.ok) return false;
     const data = (await res.json()) as { verdict?: string };
