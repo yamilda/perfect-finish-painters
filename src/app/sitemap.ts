@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/our-work`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
@@ -191,7 +191,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/garage-drywall-finishing-south-jersey`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },

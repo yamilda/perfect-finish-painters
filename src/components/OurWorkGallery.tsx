@@ -4,6 +4,35 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const projects = [
+  // Job photos sent Nov 25, 2026. Town not recorded, so no town in the alt text.
+  {
+    src: "/exterior-painting-olive-green-siding-white-trim-south-jersey-nj.webp",
+    alt: "Two-story house with olive green siding, white trim and soffits, black shutters, and a black porch railing",
+    category: "Exterior",
+    title: "Full Exterior Repaint",
+    desc: "Olive green siding with crisp white trim and soffits.",
+  },
+  {
+    src: "/exterior-trim-soffit-work-in-progress-south-jersey-nj.webp",
+    alt: "Perfect Finish crew member working on the porch soffit and trim of a green house",
+    category: "Exterior",
+    title: "Trim & Soffit Work",
+    desc: "Our crew detailing the porch soffit and trim on the same house.",
+  },
+  {
+    src: "/garage-drywall-taping-in-progress-south-jersey-nj.webp",
+    alt: "Garage with new drywall taped and mudded, a rolling scaffold, and a metal garage door",
+    category: "Drywall",
+    title: "Garage Drywall, Mid-Job",
+    desc: "New drywall taped and mudded before sanding and paint.",
+  },
+  {
+    src: "/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp",
+    alt: "Finished garage with sage green painted walls, recessed lights, and a blue-gray flake coated floor",
+    category: "Drywall",
+    title: "Garage, Finished",
+    desc: "The same garage finished and painted, with a flake-coat floor. It became a golf simulator room.",
+  },
   {
     src: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
     alt: "Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim",

@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 
 // Real exterior jobs. New job photos drop in here: add an entry with its file in /public.
 const exteriorProjects = [
+  { src: "/exterior-painting-olive-green-siding-white-trim-south-jersey-nj.webp", width: 1448, height: 1086, town: "South Jersey", title: "Full exterior repaint", alt: "Two-story house with olive green siding, white trim and soffits, black shutters, and a black porch railing" },
   { src: "/front-door-refinishing-before-after-somers-point-nj.webp", width: 3076, height: 2048, town: "Somers Point", title: "Front door refinish", alt: "Front door refinishing before and after in Somers Point NJ" },
   { src: "/garage-door-painting-wood-stain-before-after-brigantine-nj.webp", width: 3076, height: 2048, town: "Brigantine", title: "Garage door wood-grain finish", alt: "Before and after of a carriage-style garage door in Brigantine: white panels refinished to a brown wood-grain look, with gray shingle siding and a white frame" },
   { src: "/shed-exterior-painting-before-after-mays-landing-nj.webp", width: 1440, height: 1440, town: "Mays Landing", title: "Shed repaint with black trim", alt: "Before and after of a weathered tan wood shed in Mays Landing repainted white, with black double doors, black shutters, and black corner trim" },

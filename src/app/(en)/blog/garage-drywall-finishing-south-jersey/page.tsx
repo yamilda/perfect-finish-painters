@@ -45,7 +45,7 @@ export default function GarageDrywallFinishingPost() {
     author: { "@type": "Person", name: "Brandon Panameno", url: "https://perfectfinishpainter.com/about" },
     publisher: { "@type": "Organization", name: "Perfect Finish Painters", logo: { "@type": "ImageObject", url: "https://perfectfinishpainter.com/logo.webp" } },
     datePublished: "2026-06-07",
-    dateModified: "2026-06-07",
+    dateModified: "2026-11-25",
     description: "A recent garage drywall finishing and painting project in South Jersey — from bare, taped drywall to a clean, fully finished and painted space.",
   };
 
@@ -141,6 +141,21 @@ export default function GarageDrywallFinishingPost() {
               />
               <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">The finished space — smooth, bright, and ready for whatever the homeowner wants to use it for.</figcaption>
             </figure>
+
+            <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">What Does Another Finished Garage Look Like?</h2>
+            <p className="text-lg leading-relaxed">
+              Here&apos;s a second garage we finished this fall. The new drywall was taped and mudded from a rolling scaffold, then sanded and painted a soft sage green. With a flake-coat floor down, the homeowner turned it into a golf simulator room.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
+              <figure className="rounded-2xl overflow-hidden shadow-lg">
+                <Image src="/garage-drywall-taping-in-progress-south-jersey-nj.webp" alt="Garage with new drywall taped and mudded, a rolling scaffold, and a metal garage door" width={1600} height={1200} className="w-full h-auto" loading="lazy" />
+                <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Mid-job: tape and mud on the new drywall.</figcaption>
+              </figure>
+              <figure className="rounded-2xl overflow-hidden shadow-lg">
+                <Image src="/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp" alt="Finished garage with sage green painted walls, recessed lights, and a blue-gray flake coated floor" width={1600} height={1200} className="w-full h-auto" loading="lazy" />
+                <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Finished: painted walls and a flake-coat floor.</figcaption>
+              </figure>
+            </div>
 
             <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">Why Does Finishing the Drywall Matter?</h2>
             <p className="text-lg leading-relaxed">
