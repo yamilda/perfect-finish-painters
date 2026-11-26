@@ -175,7 +175,7 @@ export default function EpoxyFloorCoatingPage() {
 
           <h3 className="text-2xl font-bold text-[#1e3a5f] mt-12 mb-3">Recent Project: A Garage Turned Golf Simulator Room</h3>
           <p className="text-[#64748b] text-lg leading-relaxed mb-6">
-            We did this whole garage: finished the drywall, painted the walls, put down a blue-gray epoxy flake floor, and set up the golf simulator. <Link href="/blog/garage-drywall-finishing-south-jersey" className="text-[#2563eb] hover:underline">See the job from drywall to finish</Link>.
+            We did this whole garage: finished the drywall, painted the walls, put down a blue-gray epoxy flake floor, and set up the golf simulator. <Link href="/blog/garage-drywall-finishing-south-jersey" className="text-[#2563eb] hover:underline">See the job from drywall to finish</Link>, or see what goes into our <Link href="/garage-makeovers" className="text-[#2563eb] hover:underline">full garage makeovers</Link>.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <figure className="rounded-2xl overflow-hidden border border-[#e2e8f0] bg-white shadow-sm">

@@ -14,6 +14,8 @@ interface ServiceCard {
   shortDesc: string;
   details: string[];
   icon: React.ReactNode;
+  // Full-width card at the end of the grid, so 12 regular cards fill every row.
+  featured?: boolean;
 }
 
 const services: ServiceCard[] = [
@@ -257,6 +259,27 @@ const services: ServiceCard[] = [
       </svg>
     ),
   },
+  {
+    title: "Garage Makeovers",
+    featured: true,
+    href: "/garage-makeovers",
+    image: "/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp",
+    alt: "Finished garage with sage green painted walls, recessed lights, and a blue-gray epoxy flake floor",
+    shortDesc: "The whole garage, one crew: drywall, paint, epoxy floor, and the door. Golf simulator rooms included.",
+    details: [
+      "Drywall hung, taped & finished",
+      "Walls & ceiling painted",
+      "Epoxy flake floor",
+      "Garage door refinishing",
+      "Golf simulator & home gym rooms",
+      "One crew, one schedule",
+    ],
+    icon: (
+      <svg className="w-6 h-6 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10l9-6 9 6v10H3V10zM7 20v-6h10v6M7 17h10" />
+      </svg>
+    ),
+  },
 ];
 
 export default function ServicesSection() {
@@ -281,17 +304,17 @@ export default function ServicesSection() {
             return (
               <div
                 key={service.title}
-                className="bg-white rounded-xl shadow-md border border-[#e2e8f0] overflow-hidden group hover:shadow-lg transition-shadow duration-300"
+                className={`bg-white rounded-xl shadow-md border border-[#e2e8f0] overflow-hidden group hover:shadow-lg transition-shadow duration-300 ${service.featured ? "sm:col-span-2 lg:col-span-3" : ""}`}
               >
                 {/* Image */}
-                <div className="relative h-36 overflow-hidden">
+                <div className={`relative overflow-hidden ${service.featured ? "h-48 sm:h-64" : "h-36"}`}>
                   {service.image ? (
                     <>
                       <Image
                         src={service.image}
                         alt={service.alt ?? service.title}
                         fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes={service.featured ? "(max-width: 1280px) 100vw, 1200px" : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"}
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/70 to-transparent" />

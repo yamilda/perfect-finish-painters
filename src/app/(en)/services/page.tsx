@@ -71,6 +71,7 @@ export default function ServicesPage() {
       { "@type": "ListItem", position: 13, name: "Garage Door Painting", url: "https://perfectfinishpainter.com/garage-door-painting" },
       { "@type": "ListItem", position: 14, name: "Epoxy Floor Coating", url: "https://perfectfinishpainter.com/epoxy-floor-coating" },
       { "@type": "ListItem", position: 15, name: "Govee Permanent Outdoor Lighting", url: "https://perfectfinishpainter.com/govee-permanent-lighting" },
+      { "@type": "ListItem", position: 16, name: "Garage Makeovers", url: "https://perfectfinishpainter.com/garage-makeovers" },
     ],
   };
 

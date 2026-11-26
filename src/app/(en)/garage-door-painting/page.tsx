@@ -171,6 +171,9 @@ export default function GarageDoorPaintingPage() {
           <p className="text-[#64748b] text-lg leading-relaxed">
             We paint and stain garage doors in <Link href="/painters-brigantine-nj" className="text-[#2563eb] hover:underline">Brigantine</Link>, <Link href="/painters-margate-nj" className="text-[#2563eb] hover:underline">Margate</Link>, <Link href="/painters-somers-point-nj" className="text-[#2563eb] hover:underline">Somers Point</Link>, <Link href="/painters-mays-landing-nj" className="text-[#2563eb] hover:underline">Mays Landing</Link>, <Link href="/painters-egg-harbor-township-nj" className="text-[#2563eb] hover:underline">Egg Harbor Township</Link>, and throughout Atlantic County. Shore-town doors need salt-tolerant coatings; inland doors take more UV abuse. We spec the finish to match the location.
           </p>
+          <p className="text-[#64748b] text-lg leading-relaxed mt-4">
+            Doing the inside too? We also do <Link href="/garage-makeovers" className="text-[#2563eb] hover:underline">full garage makeovers</Link>: drywall, paint, an epoxy floor, and the door, all by one crew.
+          </p>
         </div>
       </section>
 

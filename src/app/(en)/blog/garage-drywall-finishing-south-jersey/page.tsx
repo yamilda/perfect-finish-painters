@@ -144,7 +144,7 @@ export default function GarageDrywallFinishingPost() {
 
             <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">What Does Another Finished Garage Look Like?</h2>
             <p className="text-lg leading-relaxed">
-              Here&apos;s a second garage we did this fall, start to finish. We taped and mudded the new drywall from a rolling scaffold, sanded it, and painted the walls a soft sage green. Then we put down a blue-gray <Link href="/epoxy-floor-coating" className="text-[#2563eb] underline hover:text-[#1d4ed8] transition-colors">epoxy flake floor</Link> and set up the homeowner&apos;s golf simulator.
+              Here&apos;s a second garage we did this fall, start to finish. We taped and mudded the new drywall from a rolling scaffold, sanded it, and painted the walls a soft sage green. Then we put down a blue-gray <Link href="/epoxy-floor-coating" className="text-[#2563eb] underline hover:text-[#1d4ed8] transition-colors">epoxy flake floor</Link> and set up the homeowner&apos;s golf simulator. Thinking about your own garage? See our <Link href="/garage-makeovers" className="text-[#2563eb] underline hover:text-[#1d4ed8] transition-colors">garage makeovers</Link>.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
               <figure className="rounded-2xl overflow-hidden shadow-lg">

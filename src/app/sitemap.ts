@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dates reflect the last real HTML change. The 2026-11-10 pass updated
   // alt text, social cards, and metadata across the site.
   const defaultDate = '2026-11-10'
-  const homeDate = '2026-11-10'
+  const homeDate = '2026-11-26'
   const summerBlogDate = '2026-11-10'
   const goveeDate = '2026-11-25'
   // 2026-11-25: exterior page projects/FAQ, flat-vs-satin title + quick answer, blog index title.
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const cityPages = serviceAreas.map((area) => ({
     url: `${baseUrl}/${area.slug}`,
-    lastModified: defaultDate,
+    lastModified: '2026-11-26',
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
@@ -125,15 +125,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/garage-door-painting`,
-      lastModified: defaultDate,
+      lastModified: '2026-11-26',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/epoxy-floor-coating`,
-      lastModified: visibilityDate,
+      lastModified: '2026-11-26',
       changeFrequency: 'monthly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/garage-makeovers`,
+      lastModified: '2026-11-26',
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/govee-permanent-lighting`,
