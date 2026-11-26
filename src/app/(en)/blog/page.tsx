@@ -134,7 +134,7 @@ const posts = [
   },
   {
     slug: "difference-between-flat-and-satin-paint-finish",
-    title: "Understanding the Difference Between Flat and Satin Paint Finishes",
+    title: "Flat vs Satin Paint: Which Finish Goes in Each Room?",
     excerpt: "Choosing the right paint finish can make a big difference in your home's appearance and durability. Flat and satin finishes are popular options, each with unique characteristics suited to different rooms and needs. In this post, we'll break down the key differences to help you decide what's best for your South Jersey home.",
     date: "March 2026",
     image: "/basement-room-painting-flooring-before-after-egg-harbor-township-nj.webp",

@@ -9,7 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const defaultDate = '2026-11-10'
   const homeDate = '2026-11-10'
   const summerBlogDate = '2026-11-10'
-  const goveeDate = '2026-11-10'
+  const goveeDate = '2026-11-25'
+  // 2026-11-25: exterior page projects/FAQ, flat-vs-satin title + quick answer, blog index title.
+  const visibilityDate = '2026-11-25'
 
   const cityPages = serviceAreas.map((area) => ({
     url: `${baseUrl}/${area.slug}`,
@@ -87,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/exterior-painting`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -141,7 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: summerBlogDate,
+      lastModified: visibilityDate,
       changeFrequency: 'weekly',
       priority: 0.7,
     },
@@ -153,7 +155,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/difference-between-flat-and-satin-paint-finish`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },

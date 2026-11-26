@@ -10,13 +10,13 @@ import ScrollReveal from "@/components/ScrollReveal";
 import GoveeLightShowcase from "@/components/GoveeLightShowcase";
 
 export const metadata: Metadata = {
-  title: "Govee Permanent Lights Atlantic County NJ | Perfect Finish",
+  title: "Govee Permanent Light Installation | Atlantic County NJ",
   description:
-    "Install Govee permanent outdoor lighting in Atlantic County NJ with painters who work your roofline daily. Clean, color-matched track — call 609-377-4226.",
+    "Permanent Christmas lights that stay up all year: Govee outdoor lights installed by a local painting crew in Atlantic County NJ. Free quote: 609-377-4226.",
   openGraph: {
-    title: "Govee Permanent Lights Atlantic County NJ | Perfect Finish",
+    title: "Govee Permanent Light Installation | Atlantic County NJ",
     description:
-      "Install Govee permanent outdoor lighting in Atlantic County NJ with painters who work your roofline daily. Clean, color-matched track — call 609-377-4226.",
+      "Permanent Christmas lights that stay up all year: Govee outdoor lights installed by a local painting crew in Atlantic County NJ. Free quote: 609-377-4226.",
     type: "website",
     locale: "en_US",
     url: "https://perfectfinishpainter.com/govee-permanent-lighting",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Govee Permanent Lights Atlantic County NJ | Perfect Finish",
+    title: "Govee Permanent Light Installation | Atlantic County NJ",
     description:
-      "Install Govee permanent outdoor lighting in Atlantic County NJ with painters who work your roofline daily. Clean, color-matched track — call 609-377-4226.",
+      "Permanent Christmas lights that stay up all year: Govee outdoor lights installed by a local painting crew in Atlantic County NJ. Free quote: 609-377-4226.",
     images: ["/og-card.jpg"],
   },
   alternates: { canonical: "https://perfectfinishpainter.com/govee-permanent-lighting" },
@@ -98,6 +98,7 @@ export default function GoveePermanentLightingPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Govee Permanent Outdoor Lighting Installation",
+    alternateName: ["Permanent Christmas Lights Installation", "Permanent Holiday Lighting Installation"],
     description:
       "Professional Govee permanent outdoor lighting installation in Atlantic County NJ. Roofline measurement and run planning, aluminum mounting channel fastened to the fascia with white-head stainless exterior screws, concealed low-voltage cable routing, weatherproof controller mounting, and Govee Home app setup with scenes and schedules.",
     provider: { "@id": "https://perfectfinishpainter.com/#business" },
@@ -143,6 +144,22 @@ export default function GoveePermanentLightingPage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Not strictly — the controller pairs over Bluetooth for local control from your phone. But you'll want it on your 2.4 GHz Wi-Fi network to get the useful parts: schedules that run themselves, control while you're away from the house, and voice assistant support. We connect the controller during setup and confirm the far end of the run responds before we pack up.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Govee permanent lights be used as Christmas lights?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. The lights are full color and controlled from the Govee Home app, so the same roofline run does red and green or classic warm white in December, orange in October, and plain warm white the rest of the year. Nothing comes down after the holidays.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you install permanent lights in the winter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Unlike paint, the channel is screwed to the fascia, so it doesn't need warm weather to cure. We just need a dry day without high wind for safe ladder work.",
         },
       },
       {
@@ -249,6 +266,22 @@ export default function GoveePermanentLightingPage() {
         </div>
       </section>
 
+      <section className="pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto rounded-2xl bg-[#1e3a5f] text-white p-8 sm:p-10">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Permanent Christmas Lights, Without the Ladder Every Year</h2>
+          <p className="text-white/80 text-lg leading-relaxed mb-4">
+            Holiday lighting is the reason most people call us about Govee. Once the run is up, Christmas is a tap in the app: red and green, candy-cane stripes, or classic warm white. In January you switch it back to everyday white instead of climbing back up to take it down.
+          </p>
+          <p className="text-white/80 text-lg leading-relaxed mb-6">
+            Thinking about it for this season? Book the free roofline measurement and we&apos;ll tell you what your house needs. More ideas in our post on <Link href="/blog/permanent-christmas-lights-south-jersey" className="text-white underline hover:text-white/90">permanent Christmas lights in South Jersey</Link>.
+          </p>
+          <Link href="/quiz?service=govee-lighting" className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors inline-flex items-center justify-center gap-2 shadow-lg">
+            Get a Free Lighting Quote
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          </Link>
+        </div>
+      </section>
+
       <GoveeLightShowcase />
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f1f5f9]">
@@ -343,7 +376,7 @@ export default function GoveePermanentLightingPage() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal><h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">What Does a Finished Install Look Like?</h2></ScrollReveal>
           <p className="text-[#64748b] mb-8 leading-relaxed">
-            We photograph our own jobs rather than posting stock images, so these tiles fill in as we complete Govee installs around Atlantic County. Everything you see on this site is work our crew actually did — browse <Link href="/our-work" className="text-[#2563eb] hover:underline">our project gallery</Link> in the meantime.
+            We photograph our own jobs rather than posting stock images. Every install here is work our crew actually did around Atlantic County — see more in <Link href="/our-work" className="text-[#2563eb] hover:underline">our project gallery</Link>.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {installPhotos.map((photo) => (
