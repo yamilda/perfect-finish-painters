@@ -172,6 +172,21 @@ export default function EpoxyFloorCoatingPage() {
               <p className="text-[#64748b]">Metallic and quartz systems for showrooms, office floors, and customer-facing spaces. Pair with <Link href="/commercial-painting" className="text-[#2563eb] hover:underline">commercial painting</Link> for full interior refresh.</p>
             </div>
           </div>
+
+          <h3 className="text-2xl font-bold text-[#1e3a5f] mt-12 mb-3">Recent Project: A Garage Turned Golf Simulator Room</h3>
+          <p className="text-[#64748b] text-lg leading-relaxed mb-6">
+            We did this whole garage: finished the drywall, painted the walls, put down a blue-gray epoxy flake floor, and set up the golf simulator. <Link href="/blog/garage-drywall-finishing-south-jersey" className="text-[#2563eb] hover:underline">See the job from drywall to finish</Link>.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <figure className="rounded-2xl overflow-hidden border border-[#e2e8f0] bg-white shadow-sm">
+              <Image src="/garage-epoxy-flake-floor-coating-south-jersey-nj.webp" alt="Garage floor finished in a blue-gray epoxy flake coating, with sage green walls" width={1600} height={1200} loading="lazy" className="w-full h-auto" />
+              <figcaption className="p-4 text-sm text-[#64748b]">Blue-gray epoxy flake floor, wall to wall.</figcaption>
+            </figure>
+            <figure className="rounded-2xl overflow-hidden border border-[#e2e8f0] bg-white shadow-sm">
+              <Image src="/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp" alt="Finished garage with sage green painted walls, recessed lights, and a blue-gray epoxy flake floor" width={1600} height={1200} loading="lazy" className="w-full h-auto" />
+              <figcaption className="p-4 text-sm text-[#64748b]">Walls, ceiling and floor finished, ready for the simulator.</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 

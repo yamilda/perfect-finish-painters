@@ -144,7 +144,7 @@ export default function GarageDrywallFinishingPost() {
 
             <h2 className="text-2xl font-bold text-[#1e3a5f] mt-10 mb-4">What Does Another Finished Garage Look Like?</h2>
             <p className="text-lg leading-relaxed">
-              Here&apos;s a second garage we finished this fall. The new drywall was taped and mudded from a rolling scaffold, then sanded and painted a soft sage green. With a flake-coat floor down, the homeowner turned it into a golf simulator room.
+              Here&apos;s a second garage we did this fall, start to finish. We taped and mudded the new drywall from a rolling scaffold, sanded it, and painted the walls a soft sage green. Then we put down a blue-gray <Link href="/epoxy-floor-coating" className="text-[#2563eb] underline hover:text-[#1d4ed8] transition-colors">epoxy flake floor</Link> and set up the homeowner&apos;s golf simulator.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
               <figure className="rounded-2xl overflow-hidden shadow-lg">
@@ -152,8 +152,8 @@ export default function GarageDrywallFinishingPost() {
                 <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Mid-job: tape and mud on the new drywall.</figcaption>
               </figure>
               <figure className="rounded-2xl overflow-hidden shadow-lg">
-                <Image src="/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp" alt="Finished garage with sage green painted walls, recessed lights, and a blue-gray flake coated floor" width={1600} height={1200} className="w-full h-auto" loading="lazy" />
-                <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Finished: painted walls and a flake-coat floor.</figcaption>
+                <Image src="/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp" alt="Finished garage with sage green painted walls, recessed lights, and a blue-gray epoxy flake floor" width={1600} height={1200} className="w-full h-auto" loading="lazy" />
+                <figcaption className="text-sm text-[#64748b] px-4 py-2 bg-[#f8fafc]">Finished: painted walls and an epoxy flake floor, ready for the golf simulator.</figcaption>
               </figure>
             </div>
 

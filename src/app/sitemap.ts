@@ -131,7 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/epoxy-floor-coating`,
-      lastModified: defaultDate,
+      lastModified: visibilityDate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },

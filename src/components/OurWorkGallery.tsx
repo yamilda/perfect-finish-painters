@@ -28,10 +28,17 @@ const projects = [
   },
   {
     src: "/garage-finished-painted-walls-flake-floor-south-jersey-nj.webp",
-    alt: "Finished garage with sage green painted walls, recessed lights, and a blue-gray flake coated floor",
+    alt: "Finished garage with sage green painted walls, recessed lights, and a blue-gray epoxy flake floor",
     category: "Drywall",
     title: "Garage, Finished",
-    desc: "The same garage finished and painted, with a flake-coat floor. It became a golf simulator room.",
+    desc: "We did the whole garage: drywall, paint, epoxy floor, and the golf simulator setup.",
+  },
+  {
+    src: "/garage-epoxy-flake-floor-coating-south-jersey-nj.webp",
+    alt: "Garage floor finished in a blue-gray epoxy flake coating, with sage green walls",
+    category: "Flooring",
+    title: "Garage Epoxy Flake Floor",
+    desc: "Blue-gray epoxy flake floor in the same garage, ready for the golf simulator.",
   },
   {
     src: "/shed-exterior-painting-before-after-mays-landing-nj.webp",
